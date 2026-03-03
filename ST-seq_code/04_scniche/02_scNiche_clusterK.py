@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  1 15:56:54 2025
-@author: Yahui Zhang
-"""
 import os
 import scniche as sn
 import scanpy as sc
@@ -127,4 +122,5 @@ cell_ratios.to_csv('molNiche_group3_ratios.csv')
 
 cell_counts = pd.crosstab(adata.obs['group'], adata.obs['scNiche'])
 cell_ratios = cell_counts.div(cell_counts.sum(axis=1), axis=0)
+
 cell_ratios.to_csv('scNiche_group3_ratios.csv')
