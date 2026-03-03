@@ -1,17 +1,3 @@
-"""
-Created on Fri Aug  8 16:58:43 2025
-@author: Yahui Zhang
-"""
-
-#! python
-###zhaoyunfei
-###20240808
-###https://soapy-st.readthedocs.io/en/latest/Tutorials/Spatial%20tendency.html
-####taskset -c 20-30 python
-# conda create -n SOAPy_st python=3.9
-# pip install SOAPy_st
-# conda activate SOAPy_st
-
 import os
 import cv2
 import warnings
