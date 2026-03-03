@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 29 22:24:04 2025
-@author: Yahui Zhang
-"""
 import os
 import scniche as sn
 import scanpy as sc
@@ -88,6 +83,7 @@ adata = sn.pp.prepare_data_batch(adata=adata, verbose=True, batch_num=batch_num,
 model = sn.tr.Runner_batch(adata=adata, device='cuda:0', verbose=False, choose_views=choose_views)
 adata = model.fit(lr=0.01, epochs=epochs)
 adata.write(f'{sample}_model_scNiche.h5ad')
+
 
 
 
