@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  1 15:56:54 2025
-@author: Yahui Zhang
-"""
 import os
 import scniche as sn
 from scniche.pl import *
@@ -120,4 +115,5 @@ adata_target=sc.read_h5ad(f'{outdir}{sample}_k{target_num}_scNiche.h5ad')
 
 for col in columns_to_copy:
     adata_target.obs[col] = adata.obs[col]
+
 adata_target.write(f'{sample}_res0.8_k12_Niche.h5ad')
