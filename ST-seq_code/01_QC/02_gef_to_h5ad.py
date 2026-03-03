@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  5 09:32:06 2024
-@author: Yahui Zhang
-"""
 import stereo as st
 import warnings
 import scanpy as sc
@@ -170,4 +165,5 @@ data.cells.cell_name, data.genes.gene_name
 adata = st.io.stereo_to_anndata(data,flavor='scanpy')
 adata.obs['sample'] = sample
 adata.obs['orig.ident'] = sample
+
 adata.write(dir + sample + '_cellbin.h5ad')
