@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 28 16:47:01 2025
-@author: Yahui Zhang
-"""
 import scanpy as sc
 import os
 import matplotlib.pyplot as plt
@@ -370,3 +365,4 @@ for sample in sample_names:
     
     # 将每个样本的比例合并到一个列表中
     cell_type_proportions.append(sample_proportion)
+
